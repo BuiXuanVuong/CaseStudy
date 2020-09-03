@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {padding: 0; margin: 0}
+        canvas {background: #eee; display: block; margin: 0 auto; }
+    </style>
+
+</head>
+<body>
+    <script src="Config.js"></script>
+    <script src="GameBoard.js"></script>
+    <script src="Ball.js"></script>
+    <script src="Bar.js"></script>
+    <script src="Clock.js"></script>
+    <form name="the_form">
+        <input type="text" name="kq" value="0" /><br />
+    </form>
+    <script>
+        let gameBoard = new GameBoard(CANVAST_WIDTH,CANVAST_HEIGHT);
+        let displayGameBoard = "";
+        displayGameBoard = '<canvas id="myCanvas"  width=' + gameBoard.width + ' + height=' + gameBoard.height + '></canvas>';
+        document.write(displayGameBoard);
+        let canvas = document.getElementById("myCanvas");
+        let ctx = canvas.getContext("2d");
+        let ball = new Ball(XPOSITION_BALL,YPOSITION_BALL,BALL_SPEED);
+        let bar = new Bar(BAR_WIDTH);
+        let rightPressed = false;
+        let leftPressed = false;
+
+        function draw() {
+            document.addEventListener("keydown", keyDownHandler, false);
+            document.addEventListener("keyup", keyUpHandler, false);
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ball.drawBall();
+            ball.moveBall();
+            ball.changeDirection(bar);
+            bar.drawBar();
+            bar.moveLeftBar();
+            bar.moveRightBar();
+        }
+
+        setInterval(draw, 25);
+        function keyDownHandler(e) {
+            if(e.keyCode == 39) {
+                rightPressed = true;
+            }
+            else if(e.keyCode == 37) {
+                leftPressed = true;
+            }
+        }
+        function keyUpHandler(e) {
+            if(e.keyCode == 39) {
+                rightPressed = false;
+            }
+            else if(e.keyCode == 37) {
+                leftPressed = false;
+            }
+        }
+    </script>
+</body>
+</html>
