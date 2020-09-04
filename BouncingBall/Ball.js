@@ -30,7 +30,7 @@ function Ball(x,y,speed) {
                 dy = -dy;
             }
             else {
-                // alert("GAME OVER");
+                    // alert("GAME OVER");
                     document.location.reload();
             }
         }

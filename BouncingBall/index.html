@@ -10,18 +10,20 @@
 
 </head>
 <body>
+    <form name="the_form">
+        <input type="text" name="kq" value="0" /><br />
+    </form>
+
     <script src="Config.js"></script>
     <script src="GameBoard.js"></script>
     <script src="Ball.js"></script>
     <script src="Bar.js"></script>
     <script src="Clock.js"></script>
-    <form name="the_form">
-        <input type="text" name="kq" value="0" /><br />
-    </form>
+
     <script>
         let gameBoard = new GameBoard(CANVAST_WIDTH,CANVAST_HEIGHT);
         let displayGameBoard = "";
-        displayGameBoard = '<canvas id="myCanvas"  width=' + gameBoard.width + ' + height=' + gameBoard.height + '></canvas>';
+        displayGameBoard = '<canvas id="myCanvas"  width=' + CANVAST_WIDTH + ' + height=' + CANVAST_HEIGHT + '></canvas>';
         document.write(displayGameBoard);
         let canvas = document.getElementById("myCanvas");
         let ctx = canvas.getContext("2d");
@@ -33,29 +35,31 @@
         function draw() {
             document.addEventListener("keydown", keyDownHandler, false);
             document.addEventListener("keyup", keyUpHandler, false);
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.clearRect(XPOSITION_ORIGIN_CANVAS, YPOSITION_ORIGIN_CANVAS, CANVAST_WIDTH, CANVAST_HEIGHT);
             ball.drawBall();
             ball.moveBall();
             ball.changeDirection(bar);
             bar.drawBar();
             bar.moveLeftBar();
             bar.moveRightBar();
+
         }
 
-        setInterval(draw, 25);
+        setInterval(draw, TIME_INTERVAL);
+
         function keyDownHandler(e) {
-            if(e.keyCode == 39) {
+            if(e.keyCode == KEY_RIGHT) {
                 rightPressed = true;
             }
-            else if(e.keyCode == 37) {
+            else if(e.keyCode == KEY_LEFT) {
                 leftPressed = true;
             }
         }
         function keyUpHandler(e) {
-            if(e.keyCode == 39) {
+            if(e.keyCode == KEY_RIGHT) {
                 rightPressed = false;
             }
-            else if(e.keyCode == 37) {
+            else if(e.keyCode == KEY_LEFT) {
                 leftPressed = false;
             }
         }
