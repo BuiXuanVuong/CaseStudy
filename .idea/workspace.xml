@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="edecd10c-0334-442e-92d4-15e92a55e950" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BouncingBall/Css.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BouncingBall/Ball.js" beforeDir="false" afterPath="$PROJECT_DIR$/BouncingBall/Ball.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BouncingBall/Bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/BouncingBall/Bar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BouncingBall/Config.js" beforeDir="false" afterPath="$PROJECT_DIR$/BouncingBall/Config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +61,7 @@
       <workItem from="1599096329711" duration="1893000" />
       <workItem from="1599102962549" duration="470000" />
       <workItem from="1599115383139" duration="7151000" />
-      <workItem from="1599181844835" duration="7145000" />
+      <workItem from="1599181844835" duration="7278000" />
     </task>
     <servers />
   </component>
