@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="edecd10c-0334-442e-92d4-15e92a55e950" name="Default Changelist" comment="" />
+    <list default="true" id="edecd10c-0334-442e-92d4-15e92a55e950" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/BouncingBall/Css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BouncingBall/Ball.js" beforeDir="false" afterPath="$PROJECT_DIR$/BouncingBall/Ball.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BouncingBall/Bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/BouncingBall/Bar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BouncingBall/Config.js" beforeDir="false" afterPath="$PROJECT_DIR$/BouncingBall/Config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +19,7 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -29,6 +37,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -37,6 +46,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\CODEGYM\MODULE1\Project\EXCERCISE\CaseStudy" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -52,7 +66,7 @@
       <workItem from="1599096329711" duration="1893000" />
       <workItem from="1599102962549" duration="470000" />
       <workItem from="1599115383139" duration="7151000" />
-      <workItem from="1599181844835" duration="1446000" />
+      <workItem from="1599181844835" duration="7145000" />
     </task>
     <servers />
   </component>
@@ -77,7 +91,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/BouncingBall/index.html</url>
+          <url>file://$PROJECT_DIR$/index.html</url>
           <line>57</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>

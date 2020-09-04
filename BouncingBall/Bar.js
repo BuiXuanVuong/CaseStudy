@@ -16,7 +16,8 @@ function Bar(barWidth) {
     this.drawBar = function () {
         ctx.beginPath();
         ctx.rect(this.barX, canvas.height-this.barHeight, this.barWidth, this.barHeight);
-        ctx.fillStyle = "#0095DD";
+        // ctx.fillStyle = "#0095DD";
+        ctx.fillStyle = "blue";
         ctx.fill();
         ctx.closePath();
     }

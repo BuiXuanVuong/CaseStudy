@@ -1,0 +1,22 @@
+* {padding: 0; margin: 0}
+div  {
+    text-align: center;
+}
+canvas {background: #eee; display: block; margin: 0 auto; }
+h2 {
+    color: blue;
+}
+h3 {
+    color: blue;
+}
+input   {
+    border-collapse: collapse;
+    border: white;
+    color: blue;
+    font-size: 30px;
+
+}
+form {
+    margin-left: 340px;
+    color: dodgerblue;
+}

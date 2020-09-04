@@ -38,7 +38,8 @@ function Ball(x,y,speed) {
     this.drawBall = function () {
         ctx.beginPath();
         ctx.arc(this.x, this.y, ballRadius, 0, Math.PI*2);
-        ctx.fillStyle = "#0095DD";
+        // ctx.fillStyle = "#0095DD";
+        ctx.fillStyle = "blue";
         ctx.fill();
         ctx.closePath();
         this.moveBall();
